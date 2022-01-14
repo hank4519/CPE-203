@@ -1,5 +1,15 @@
 package Part2;
+/*
 
+
+
+
+Fuck 
+
+
+
+
+*/
 public class SimpleIf {
 
   /**
