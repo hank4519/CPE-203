@@ -1,0 +1,23 @@
+1/ Description:
+This project is a simulation of an ocean world which consists of 
+different kinds of entities where each entities has its own unique behaviors.
+Following is the list of different entities in this ocean world:
+
++ Octopus: the mission of each octopus is to catch a certain number of fishes.
+Once they have found enough fishes, they will bring those fishes to
+a nearest atlantis and then start this process all over again to 
+catch as many fishes as possible.
+
++ Fish: fishes are the target of octopuses. They only appear near 
+the area of seagrasses. After appearing for a period of time,
+if a fish has not yet to be found by any octopuses, it will transform into a crab.
+
++ Crab: the mission of crabs is to find and destroy as many seagrasses as possible. 
+
++ Quake: a quake is created everytime a crab found seagrasses
+
++ Atlantis: a place where octopuses store their fishes.
+
++ Seagrass: seagrasses is the target of crabs, and the favorite place of fishes.
+
+The simulation stops once there is no seagrasses.

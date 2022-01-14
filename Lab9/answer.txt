@@ -1,0 +1,78 @@
+CPE 203   Hank Tsai    Lab 9 
+
+Question 6: 
+We get an error when trying to throw a ZeroRadiusException because
+ZeroRadiusException is user defined checked exception because it extends
+class Exception and Exception is checked. And most user defined exceptions
+are checked exceptions since we are extending Exception mostly.
+If a method is trying to throw a checked exception, it must 
+either handle it using like try/catch, or we neeed to use throws keyword
+after the method signature. And since we don't have either of them, there
+is compile error. We can fix it by adding 'throws ZeroRadiusException' 
+and 'throws NegativeRadiusException' after method signature. 
+
+Question 7: 
+By having CircleException extends RuntimeException instead of Exception, 
+we have made CircleException an unchecked exception since RuntimeException
+is unchecked exception. By doing so, java program will not check these
+exceptions at compile time, and therefore, no errors are generated. We
+can also do like I said in question 6, have the method explicitly throws
+those checked exception after method signature, that will also solve the
+problem. 
+
+Question 9: 
+The circle is not getting printed because we are passing in 0 as radius
+for Circle's parameter. And we are inside the try/catch/finally block
+which means we will be checking potential CircleExceptions.
+
+for a valid radius let's say 5, it will print 
+Radius: 5.0
+In finally.
+Done.
+
+for a zero radius, it will print 
+zero radius
+In finally.
+Done.
+
+For a negative raidus, it will print 
+negative radius
+In finally.
+Done.
+
+The circle is only getting printed when the radius is valid, greater 
+than 0. "In finally" is always getting printed no matter if the input
+radius is valid or not becayse finally will always be executed. "Done" 
+is also getting printed no matter the input radius is valid of not, so
+the prigram will excute try/catch/finally, and then get out of the block
+to execute whatever is left outside the block. 
+
+Question 13: 
+After commenting out NegativeRadiusException. If we were extending Exception
+there will be compiler error. But if we have CircleException extends 
+runtimeException like what we are doing right now, the error message 
+appears in the console after we run it. It prints: 
+
+In finally.
+Exception in thread "main" NegativeRadiusException: negative radius
+	at Circle.<init>(Circle.java:16)
+	at CircleTest.main(CircleTest.java:6)
+
+
+
+Question 14:
+
+Since our own defined exceptions are all unchecked exceptions because 
+our super class is RuntimeException. Then nothing will happen if we just
+contruct a bad circle before the try because there is no compile errors. 
+But if we run it, we would bump into the exceptio error. 
+
+Question 15: 
+After a return statement is added. Only "In finally" is printed. Looks
+like no matter what, finally will always be executed. But "Done" is not 
+printed.  
+
+
+
+
+

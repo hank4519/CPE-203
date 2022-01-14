@@ -1,0 +1,51 @@
+CPE 203  Project 5 Description    Hank Tsai
+
+
+1. I worked alone on this project
+
+
+2. You trigger the event by doing a mouse press on one of those grid,
+and you can trigger it many times. Note though, to translate those tiles
+correctly when pressing up/left/down/right arrows, you press one at a 
+time, so the key pressed will get recorded properly and translate the 
+point accordingly. If you hold onto one the arrows to quickly move 
+around the virtural world, the mouse pressed point might be inaccurate. 
+
+3. 
+When the event is triggerd 
+
+There will be a random number (between 4 to 7) of volcanos pop up, and 
+volcanos will keep animating for a long time, and it will look like 
+they are erupting. And the condition guarentted that the amount of 
+volcanos will not exceeds half of the avilable spaces at the 
+beginning of the program.
+
+4. What affected entities should do? 
+
+This new event will transform both Octofull and OctoNotFull to an 
+animated Seahorse if they're close enough to the event (eg <= 2 in 
+Euclidean distance). And the transfomed Seahorse will seek out those 
+female seahorses that are already planted in the virtual world. And it 
+will turn those female seahorses into purple crystals. 
+
+5. What the new entity is and how it should behave? 
+
+The new entity is Pirate. It will spawn periodically near the active 
+volcanos. And the pirate will spawn on at a time for one collection of
+volcanos because I don't like too many pirates jumping around the world.
+Moreover, one collection of volcanos will produce at most three pirates
+because of the same reason. The pirate will first seek out those golds 
+that are also planted beforehand in the virtural world, their goal is to
+collect two chests of gold, after that, they will randomly be categorized
+as non-agreesive pirates and agreesive, non-agreesive pirates will find 
+the closest obstacle and turn that specific obstacle into a golden 
+shinny obstacle, and then the pirate will disappear. The agreesive kind 
+of pirates will find the nearest crab to chase it down and attack, which
+will leave a RIP tomb for the crab. After it slaughtered two crabs, it 
+will eventually calm down and tramformed back to a non-agreesive pirate
+and just do the same thing, find a obstacle and turn it into a golden one. 
+
+
+6. Not applicable 
+
+Thank you, professor and TA, it has been a great quarter. 
